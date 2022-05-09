@@ -1,0 +1,264 @@
+/* PRESETS */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-size: 10px
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.book {
+    font-weight: 300;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+body {
+    font-family: Barlow, sans-serif;
+}
+
+.cursivo {
+    font-style: oblique;
+    font-weight: 200;
+}
+
+.section {
+    padding: 0 10px;
+}
+
+/* NAV */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    mix-blend-mode: difference;
+}
+
+.nav-logo {
+    height: 24px;
+    width: 48px;
+    background: black;
+    mix-blend-mode: difference;
+}
+
+.nav-menu {
+    height: 24px;
+    width: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.line-1,
+.line-2,
+.line-3 {
+    height: 4px;
+    mix-blend-mode: difference;
+    background: white;
+}
+
+/* SCROLLDOWN BUTTON */
+
+.scrolldown-button {
+    height: 96px;
+    width: 96px;
+    border-radius: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 32px;
+    right: 10px;
+    z-index: 100;
+    mix-blend-mode: difference;
+}
+
+.scrolldown-button svg{
+    height: 64px;
+    mix-blend-mode: difference;
+}
+
+/* HEROBOX */
+
+.herobox {
+    background: #F2F2F2;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(/images/nk-logo-affi-white.svg);
+    background-size: 1800px;
+    background-repeat: none;
+    animation: slide 28s linear infinite;
+}
+
+@keyframes slide {
+
+    0% {
+        background-position: 1800px;
+    }
+
+    100% {
+        background-position: 0px;
+    }
+
+}
+
+.herobox h1 {
+    font-family: Bebas Neue, sans-serif;
+    font-size: calc(12vh + 1rem);
+    line-height: calc(12vh + 1rem);
+    margin-bottom: 24px;
+}
+
+.text-wrap{
+    overflow: hidden;
+}
+
+.herobox span{
+    display: block;
+    animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+}
+
+.anim1 { 
+    animation-duration: 1.9s;
+}
+
+.anim2 { 
+    animation-duration: 2s;
+}
+
+.anim3 { 
+    animation-duration: 2.3s;
+}
+
+.anim4 { 
+    animation-duration: 2.4s;
+}
+
+
+@keyframes reveal {
+    0% {
+      transform: translate(0,100%);
+    }
+    100% {
+      transform: translate(0,0);
+    }
+  }
+
+/* CLIP PATH */
+
+.clip-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center top;
+    clip-path: circle(0px at bottom 80px right 58px);
+}
+
+/* SECTION 1 */
+
+.section-1 {
+    position: relative;
+    /* magia */
+    background-color: transparent;
+    /* magia */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.section-1 h2 {
+    font-family: Bebas Neue, sans-serif;
+    font-size: calc(6vh + 1rem);
+    line-height: calc(6vh + 1rem);
+    margin-bottom: 24px;
+}
+
+.section-1 p {
+    font-weight: 300;
+}
+
+.section-1 p:last-child {
+    margin-top: 16px;
+}
+
+
+
+/* SECTION 2 */
+
+.section-2 {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2 h1 {
+    color: black;
+}
+
+/* SECTION 3 */
+
+.section-3 {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3 h1 {
+    color: white;
+}
+
+/* SECTION 4 */
+
+.section-4 {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4 h1 {
+    color: black;
+}
